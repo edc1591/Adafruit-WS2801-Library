@@ -5,6 +5,9 @@
  #include <pins_arduino.h>
 #endif
 
+#ifndef ADAFRUIT_WS2801_H
+#define ADAFRUIT_WS2801_H
+
 // Not all LED pixels are RGB order; 36mm type expects GRB data.
 // Optional flag to constructors indicates data order (default if
 // unspecified is RGB).  As long as setPixelColor/getPixelColor are
@@ -63,3 +66,4 @@ class Adafruit_WS2801 {
     hardwareSPI, // If 'true', using hardware SPI
     begun;       // If 'true', begin() method was previously invoked
 };
+#endif
